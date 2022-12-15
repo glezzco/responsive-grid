@@ -1,0 +1,135 @@
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: var(--Very_Light_Gray);
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    Font-size: 29px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    Font-size: 29px;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    Font-size: 18px;
+    color: var(--Grayish_Blue);
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    Font-size: 15px;
+    color: var(--Grayish_Blue);
+}
+
+.main{
+    margin: 0 auto;
+    width: 375px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+.header h1{
+    margin-top: -3rem;
+    margin-bottom: 0;
+}
+
+.box{
+    padding: 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: white;
+    -webkit-box-shadow: 1px 18px 11px -6px rgba(0,0,0,0.27);
+    -moz-box-shadow: 1px 18px 11px -6px rgba(0,0,0,0.27);
+    box-shadow: 1px 18px 11px -6px rgba(0, 0, 0, 0.089);
+}
+.box p{
+    margin-top: -2rem;
+}
+
+.img img{
+    margin-left: 70%;
+}
+
+.supervisor{
+    border-top: 5px var(--Cyan) solid;
+}
+
+.team{
+    border-top: 5px var(--Red) solid;
+}
+
+.karma{
+    border-top: 5px var(--Orange) solid;
+}
+
+.calculator{
+    border-top: 5px var(--Blue) solid;
+}
+
+@media (min-width: 770px) {
+    .main{
+        
+        width: 1440px;
+        margin:  25rem auto;
+    }
+
+    .header h3{
+        width: 650px;
+        margin-left: 37rem;
+    }
+
+    .box{
+        width: 350px;
+        height: 50%;
+    }
+    .container{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+
+    .supervisor{
+        margin-top: 15rem;
+        margin-left: 14rem;
+    }
+
+    .calculator{
+        margin-top: 15rem;
+        margin-right: 14rem;
+    }
+
+    .box_container{
+        margin-left: 2rem;
+    }
+    
+  }
